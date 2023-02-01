@@ -1,24 +1,13 @@
-﻿namespace JohanCarrasco_Catalogo_P3;
+﻿using JohanCarrasco_Catalogo_P3.ViewModels;
+
+namespace JohanCarrasco_Catalogo_P3;
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
-
 	public MainPage()
 	{
 		InitializeComponent();
-	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
-
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		BindingContext = new LoginViewModel(Navigation);
 	}
 }
 
