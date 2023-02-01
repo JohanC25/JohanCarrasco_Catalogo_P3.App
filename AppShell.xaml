@@ -3,12 +3,24 @@
     x:Class="JohanCarrasco_Catalogo_P3.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:JohanCarrasco_Catalogo_P3"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:JohanCarrasco_Catalogo_P3">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" /> -->
+
+    <TabBar>
+        <Tab Title="Productos en venta"
+             Icon="producto.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Productos}" />
+        </Tab>
+        <Tab Title="Usuarios Registrados"
+             Icon="user.png">
+            <ShellContent ContentTemplate="{DataTemplate views:Dashboard}" />
+        </Tab>
+    </TabBar>
+
+    
 
 </Shell>

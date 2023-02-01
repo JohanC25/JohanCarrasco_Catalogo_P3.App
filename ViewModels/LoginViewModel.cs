@@ -56,7 +56,7 @@ namespace JohanCarrasco_Catalogo_P3.ViewModels
 				var content = await auth.GetFreshAuthAsync();
 				var serializedContent = JsonConvert.SerializeObject(content);
 				Preferences.Set("FreshFirebaseToken", serializedContent);
-				await this._navigation.PushAsync(new Dashboard());
+				await this._navigation.PushAsync(new AppShell());
 			}
 			catch (Exception ex)
 			{

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JohanCarrasco_Catalogo_P3.Productos">
+
+    <ScrollView >
+        <VerticalStackLayout Spacing="25"
+                             Padding="30,0"
+                             VerticalOptions="Center">
+            <VerticalStackLayout >
+                <Image
+                    Source="laptop.png"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    HeightRequest="100"
+                    WidthRequest="100" />
+                <Label Text="Laptop Acer: 500GB de almacenamiento, 16GB de RAM, Procesador Intel Corei5, 11 Generacion, Precio: $699.99" 
+                       FontSize="24" 
+                       TextColor="Gray" 
+                       HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout >
+                <Image
+                    Source="cellphone.png"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    HeightRequest="100"
+                    WidthRequest="100" />
+                <Label Text="Celular Samsung A04: Pantalla de 6.5'', Procesador de 1.6GHz, RAM de 4GB, Camara dual 50MP + 2MP, Precio: $399.99" 
+                       FontSize="24" 
+                       TextColor="Gray" 
+                       HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

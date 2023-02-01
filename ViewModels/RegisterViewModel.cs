@@ -9,17 +9,17 @@ namespace JohanCarrasco_Catalogo_P3.ViewModels
 
 		private INavigation _navigation;
 
-		private string correoElectronico;
+		private string email;
 		private string contrasenia;
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
-		public string CorreoElectronico
+		public string Email
 		{
-			get => correoElectronico;
+			get => email;
 			set
 			{
-				correoElectronico = value;
+				email = value;
 				RaisePropertyChanged("Email");
 			}
 		}
@@ -53,7 +53,7 @@ namespace JohanCarrasco_Catalogo_P3.ViewModels
 			try
 			{
 				var authProvider = new FirebaseAuthProvider(new FirebaseConfig(webApiKey));
-				var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(CorreoElectronico, Contrasenia);
+				var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(Email, Contrasenia);
 				string token = auth.FirebaseToken;
 				if(token != null)
 				{

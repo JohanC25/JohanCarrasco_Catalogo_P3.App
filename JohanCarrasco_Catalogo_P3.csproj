@@ -75,6 +75,9 @@
 	  <MauiXaml Update="Dashboard.xaml">
 	    <Generator></Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Productos.xaml">
+	    <Generator></Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="RegisterPage.xaml">
 	    <Generator></Generator>
 	  </MauiXaml>
